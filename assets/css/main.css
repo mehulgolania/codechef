@@ -1,0 +1,80 @@
+:root {
+  --primary-font: 'Ubuntu', sans-serif;
+  --light-black-color: #34404B;
+  --lighter-black-color: #2F2F2F;
+  --orange-color: #FF5912;
+  --white-color: #ffffff;
+  --gray-color: #F0F0F0;
+  --dark-gray-color: #f2f2f2;
+  --silver-gray: #F4F6F8;
+}
+
+/* Global Reset */
+*{box-sizing: border-box;}
+html, body {padding: 0; margin: 0; line-height: normal;font-family: var(--primary-font);font-weight: normal; color: var(--light-black-color);}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: normal;}
+a{text-decoration: none;}
+img{max-width: 100%;}
+
+/* Utility Classes */
+.flex{display: flex;}
+
+.container{width: 1340px;max-width: 100%; margin: 0 auto;padding-left:10px;padding-right: 10px;}
+.content-container{width:920px;max-width:100%;margin: 0 auto;}
+
+.bg-white{background: var(--white-color);}
+.lighter-black{background: var(--lighter-black-color);}
+.silver-section{background: var(--silver-gray);}
+
+/* Button */
+.line-link-btn{border:1px solid var(--orange-color);text-transform:capitalize; padding: 10px 20px;border-radius: 2px;}
+.fill-link-btn{display:block;width:218px;text-align: center;color: var(--white-color);background: var(--orange-color);padding:12px 10px;font-size: 18px;}
+
+
+/* Top Header */
+.top-header {border-bottom:1px solid rgba(230, 232, 235, 0.5);padding: 15px 0;}
+.top-header .container{justify-content: space-between; align-items: center;}
+.top-header ul{padding: 0;margin: 0;list-style: none;font-family: var(--primary-font); align-items: center;}
+.top-header ul li{padding: 0;}
+.top-header ul li a{display: block; color: var(--light-black-color);}
+
+ul.contact-section{padding: 0; margin: 0;}
+ul.contact-section li:first-child{margin-right: 20px;}
+ul.contact-section li.email{padding-left: 30px;background:url('/assets/images/email.png') no-repeat left center; }
+ul.contact-section li.phone{padding-left: 20px;background:url('/assets/images/phone.png') no-repeat left center; }
+
+ul.link-section li:first-child{margin-right: 25px;}
+
+/* Main Navigation */
+.main-navigation{padding: 25px 0 20px 0;}
+.main-navigation .container{justify-content: space-between;align-items: baseline;}
+.brand-section a{display: block;}
+ul.nav{margin:0; padding: 0; list-style: none;}
+ul.nav li{margin-right: 35px;}
+ul.nav li:last-child{margin-right: 0;}
+ul.nav li a{color: var(--light-black-color);position: relative;text-transform: capitalize;}
+ul.nav li a.active{color: var(--orange-color);}
+
+ul.nav li a:after{content:'';position: absolute;left:0;bottom:-10px;width: 60%;border-top: 4px solid transparent;border-radius: 5px;}
+ul.nav li a.active:after{border-color: var(--orange-color);}
+
+/* Enroll Section */
+.enrol-section{background: url('/assets/images/bg.svg') no-repeat center;background-size: cover;}
+.enrol-container{background: url('/assets/images/chef.png') no-repeat right bottom; padding: 140px 10px 115px 10px;}
+.enrol-section h1{font-size: 44px;}
+.sub-title{font-size:24px; line-height: 36px;color: var(--lighter-black-color);margin: 20px 0 0;}
+.enrol-btn{margin-top: 50px;}
+
+/* Date Section */
+ul.date-details{margin: 0; padding: 15px 0;list-style: none;color: var(--gray-color);}
+ul.date-details li{align-items: center;margin-right: 50px;padding-right: 50px;position: relative;border-right:1px solid rgba(224, 224, 224, 0.67);}
+ul.date-details li:last-child{margin-right: 0px;padding-right: 0px;border-right: 0;}
+ul.date-details li span{margin-right: 15px;font-size: 20px;}
+ul.date-details li h2{font-size: 24px;}
+
+
+/* Certification Section */
+.certification-section{padding:80px 0;}
+.certification-section h2{text-align: center;font-size: 46px;margin-bottom: 40px;}
+.certification-section p{font-size: 20px;line-height: 36px;margin-bottom: 40px;margin-top: 0;}
+.certification-section p:last-child{margin-bottom: 0;}

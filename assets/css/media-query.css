@@ -1,0 +1,32 @@
+@media only screen and (max-width: 767px){
+  .container{padding-left:30px; padding-right: 30px;}
+
+  .top-header .container{flex-direction: column;}
+  .top-header ul.link-section{margin-top: 10px;}
+
+  .main-navigation .container{flex-direction: column;}
+  .main-navbar{margin-top:40px;}
+
+  .enrol-container{padding-top: 40px;padding-bottom: 100px;}
+  .enrol-section h1{font-size: 30px;line-height: 43px;}
+  .sub-title{font-size: 18px;line-height: 36px; }
+  .enrol-btn{margin-top: 60px;}
+
+  ul.date-details{flex-direction: column;}
+  ul.date-details li{border:0;margin:0 0 20px 0;padding:0 30px !important; justify-content:space-between;}
+  ul.date-details li:last-child{margin-bottom: 0;}
+  ul.date-details li span{font-size: 14px;}
+  ul.date-details li h2{font-size: 18px;text-align: right;}
+
+  .certification-section{padding:60px 30px 50px;}
+  .certification-section h2{font-size: 36px;text-align: left;}
+  .certification-section p{line-height: 30px;}
+}
+
+@media only screen and (max-width: 480px){
+  ul.contact-section{flex-direction: column;}
+  ul.contact-section li:first-child{margin:0 0 10px;}
+
+  ul.nav{flex-wrap: wrap;}
+  ul.nav li{margin-bottom: 20px;}
+}
